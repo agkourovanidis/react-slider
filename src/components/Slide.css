@@ -1,0 +1,19 @@
+.slide {
+    height: 190px;
+    width: 262px;
+    background-size: 262px 190px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+
+    /* border: solid red 1px; */
+}
+
+@media (max-width: 850px) {
+    .slide {
+        height: 220px;
+        width: 440px;
+        background-size: 440px 220px;
+    }    
+}
