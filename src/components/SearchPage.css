@@ -1,13 +1,6 @@
 .searchPage {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* height: fit-content; */
-    
-    /* background-color: #f0f0f7; */
-    /* background-color: #39566b; */
-    /* background-color: #ecf7ff; */
-    /* background-color: #e7edf2; */
     background-color: #ebf1f6;
 
     /* border: solid blue 3px; */
@@ -34,3 +27,15 @@
     margin: 5px;
 }
 /*#endregion */
+
+@media (max-width: 450px) {
+    .searchPage {
+        justify-content: left;
+        width: fit-content;
+    }
+
+    /* .column {
+        float: left;
+        width: 46%;
+      } */    
+}    

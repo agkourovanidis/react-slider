@@ -20,7 +20,7 @@ import "./Slider.css";
 const Slider = (props) => {
   // const getWidth = () => window.innerWidth
   // const getWidth = () => 300;
-  const getWidth = () => window.innerWidth>850 ? 262 : 440;
+  const getWidth = () => window.innerWidth>850 ? 262 : 400;
 
   const [state, setState] = useState({
     activeIndex: 0,
