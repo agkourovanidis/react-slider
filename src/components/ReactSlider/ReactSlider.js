@@ -42,22 +42,21 @@ export default function ReactSlider(props) {
       ))}
 
       <div className="showme">
-      <BtnSlider moveSlide={nextSlide} direction={"next"} />
-      <BtnSlider moveSlide={prevSlide} direction={"prev"} />
+        <BtnSlider moveSlide={nextSlide} direction={"next"} />
+        <BtnSlider moveSlide={prevSlide} direction={"prev"} />
 
-      <div className="container-dots">
-        {/* {Array.from({ length: 5 }).map((item, index) => ( */}
-        {Array.from({ length: props.slides.length }).map((item, index) => (
-          <div
-            //// my
-            key={index}
-            onClick={() => moveDot(index + 1)}
-            className={slideIndex === index + 1 ? "dot active" : "dot"}
-          ></div>
-        ))}
+        <div className="container-dots">
+          {/* {Array.from({ length: 5 }).map((item, index) => ( */}
+          {Array.from({ length: props.slides.length }).map((item, index) => (
+            <div
+              //// my
+              key={index}
+              onClick={() => moveDot(index + 1)}
+              className={slideIndex === index + 1 ? "dot active" : "dot"}
+            ></div>
+          ))}
+        </div>
       </div>
-      </div>
-
     </div>
   );
 }

@@ -24,7 +24,7 @@
   opacity: 1;
 }
 
-.showme {
+/* .showme {
   opacity: 0;
   visibility: hidden;
   transition: 0.55s opacity, 0.55s visibility;
@@ -32,7 +32,7 @@
 .container-slider:hover .showme {
   opacity: 1;
   visibility: visible;
-}
+} */
 
 .btn-slide {
   display: flex;
