@@ -14,7 +14,7 @@ const Dot = ({ active }) => {
         // padding: 3px;
         padding: ${active ? '4px' : '3px'};
         margin-right: 5px;
-        cursor: pointer;
+        // cursor: pointer;
         border-radius: 50%;
         background: ${active ? 'white' : 'rgb(192, 192, 192)'};
         opacity: ${active ? '90%' : '50%'};
