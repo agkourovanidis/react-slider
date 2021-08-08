@@ -1,9 +1,9 @@
 import React from "react";
 import "./SearchResult.css";
-import Slider from './Slider';
+import Slider from "./Slider";
 
 function SearchResult({
-//   img,
+  //   img,
   images,
   location,
   category,
@@ -24,15 +24,20 @@ function SearchResult({
   return (
     <div className="searchResult">
       {/* <img src={img} alt="" /> */}
-      {images===null ? '' :
-      <Slider slides={images}/>
-      }
+      {images === null ? (
+        ""
+      ) : (
+        <Slider
+          slides={images}
+
+          //// from lsn 02-autoplay
+          // autoPlay={2}
+        />
+      )}
       {/* <FavoriteBorderIcon className="searchResult__heart" /> */}
       <div className="searchResult__info">
         <div className="searchResult__infoTop">
-          <p  className="searchResult__infoTop_p">
-            {location}
-          </p>
+          <p className="searchResult__infoTop_p">{location}</p>
           <div className="searchResult__infoTop_div1">
             <h3>{title}</h3>
             <span>{category}</span>
