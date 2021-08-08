@@ -24,15 +24,17 @@
   opacity: 1;
 }
 
-/* .showme {
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.55s opacity, 0.55s visibility;
+.showme {
+  z-index: 100;
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  /* transition: 0.55s opacity, 0.55s visibility; */
 }
 .container-slider:hover .showme {
-  opacity: 1;
-  visibility: visible;
-} */
+  z-index: 100;
+  /* opacity: 1; */
+  /* visibility: visible; */
+}
 
 .btn-slide {
   display: flex;
